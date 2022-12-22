@@ -1,0 +1,73 @@
+.animation_gif_sec {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.start_bio {
+    color: aliceblue;
+    position: absolute;   
+    max-width: 1080px;
+    margin: 0 auto;
+}
+
+.animation_start {
+    background-color: black;
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.small_sub_intro{
+    font-size: 2rem;
+    font-weight: 700;
+}
+.small_intro{
+    font-size: 3.6rem;
+}
+
+.animation_start.animate .move {
+    transition-timing-function: ease-in;
+    transition-duration: .4s;
+    -webkit-transform: scale(4);
+    transform: scale(4);
+    opacity: 0;
+}
+
+.animation_start .animation_container {
+    margin: auto;
+    text-align: center;
+    max-width: 1080px;
+    padding: 0 5%;
+}
+
+
+.animation_start.deanimate .move {
+    transition-timing-function: ease-out;
+    transition-duration: .3s;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
+}
+
+#GIF_used {
+    width: 100%;
+    /* max-width: 1080px; */
+    align-self: center;
+    justify-content: center;
+}
+
+@media (max-width:500px){
+    .small_intro{
+        font-size: 2rem;
+    }
+    .small_sub_intro{
+        font-size: 1rem;
+    }
+}
+@media (max-width:700px)and (min-width:500px){
+    .small_intro{
+        font-size: 3rem;
+    }
+}
