@@ -1,0 +1,92 @@
+.about-me-container{
+    background-color: black;
+    color: #28c6ed;
+    margin: 0rem 3rem 2rem;
+    padding: 3rem 5rem;
+    border: 1px solid #28c6ed;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.aboutme{
+    font-size: 3rem;
+    margin: 1rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: aliceblue;
+    border-bottom: 3px solid White;
+    display: inline;
+}
+
+.leftbox img{
+    max-width: 300px;
+    height: 80%;
+    max-height: 300px;
+    border-radius: 100%;
+}
+
+.about-me-container li{
+    font-size: 1.4rem;
+    text-align: left;
+    line-height: 2;
+    font-family: "Space mono", sans-serif;
+    margin-top: 10px;
+    margin-left: 2rem;
+}
+.about-me-container ul{
+    margin: 2rem 0 ;
+}
+
+@media (max-width:500px) {
+
+    .about-me-container{
+        padding: 2rem;
+        margin: 1.5rem;
+    }
+    .aboutme {
+        font-size: 2rem;
+        margin: 1rem;
+    }
+
+    .about-me-container li {
+        font-size: 1rem;
+    }
+}
+.leftbox{
+    display: flex;
+}
+
+@media (max-width:700px)and (min-width:500px) {
+    .aboutme {
+        font-size: 2.5rem;
+        margin: 1rem;
+    }
+
+    .about-me-container li {
+        font-size: 1.1rem;
+    }
+    .leftbox img{
+        max-width: 300px;
+        width: 100%;
+        float: none;
+        border-radius: 100%;
+        padding: 10px;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width:1000px) {
+    .leftbox{
+        flex-direction: column;
+        align-items: center;
+    }
+    .leftbox img{
+        width: 100%;
+    }
+    .about-me-container li{
+        font-size: 1.2rem;
+    }
+    
+}
+

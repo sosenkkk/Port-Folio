@@ -35,17 +35,22 @@ const FrontPageAnimation = () => {
 
 
     return (
-        <div style={{backgroundColor:"black"}}  >
+        <div style={{ backgroundColor: "black", overflow: "hidden" }}  >
             <div className={`animation_start elementToFadeInAndOut`} id="animation_start-scene">
                 <section className="move">
                     <div className="animation_container">
                         <section className="animation_gif_sec">
                             <div className="start_bio">
-                                <h1 className="small_intro">HELLO,
-                                    <br />
+                                <h2 className="small_intro_hello"  >HELLO,
+                                </h2>
+                                <h1 className="small_intro" >
                                     I AM SHASHANK.
                                 </h1>
-                                <p className="small_sub_intro">Web Developer</p>
+                                <div class="div-holder">
+                                    <div class="typewriter">
+                                        <h4>WEB DEVELOPER</h4>
+                                    </div>
+                                </div>
                             </div>
                             <img
                                 src="https://i.imgur.com/lISiYme.gif"
