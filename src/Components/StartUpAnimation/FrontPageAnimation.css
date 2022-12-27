@@ -6,7 +6,7 @@
 
 .start_bio {
     color: aliceblue;
-    position: absolute;   
+    position: absolute;
     max-width: 1080px;
     margin: 0 auto;
 }
@@ -19,12 +19,18 @@
     justify-content: center;
     align-items: center;
 }
-.small_sub_intro{
+
+.small_sub_intro {
     font-size: 2rem;
     font-weight: 700;
+    font-family: 'Maven Pro', sans-serif;
+
 }
-.small_intro{
-    font-size: 3.6rem;
+
+.small_intro {
+    font-size: 3.8rem;
+    line-height: 1.25;
+    font-family: 'Maven Pro', sans-serif;
 }
 
 .animation_start.animate .move {
@@ -58,16 +64,50 @@
     justify-content: center;
 }
 
-@media (max-width:500px){
-    .small_intro{
+@media (max-width:500px) {
+    .small_intro {
         font-size: 2rem;
     }
-    .small_sub_intro{
+
+    .small_sub_intro {
         font-size: 1rem;
     }
 }
-@media (max-width:700px)and (min-width:500px){
-    .small_intro{
+
+@media (max-width:700px)and (min-width:500px) {
+    .small_intro {
         font-size: 3rem;
     }
+}
+
+.fade-in-image {
+    animation: fadeIn 1s;
+}
+
+
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.elementToFadeInAndOut {
+    background-color: black;
+    -webkit-animation: fadeinout 0.3s  linear forwards;
+    animation: fadeinout 0.3s  linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0%{ opacity: 0; }
+  100% { opacity: 1; }
+}
+
+@keyframes fadeinout {
+    0%{ opacity: 0; }
+    100% { opacity: 1; }
 }

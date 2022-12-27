@@ -1,0 +1,64 @@
+.preloader {
+    height: 100vh;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader h1 {
+    color: #28c6ed;
+    z-index: 10;
+    font-size: 1rem;
+    font-family: 'Roboto Mono', monospace;
+    overflow: hidden;
+    border-right: .15em solid rgb(0, 94, 255);
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation:
+        typing 0.65s steps(12, end),
+        blink-caret .5s step-end infinite;
+}
+.preloader_holder{
+    display: inline;
+}
+@keyframes typing {
+    from {
+        width: 0
+    }
+
+    to {
+        width: 100%
+    }
+}
+
+
+@keyframes blink-caret {
+
+    from,
+    to {
+        border-color: transparent
+    }
+
+    50% {
+        border-color: rgb(59, 155, 215);
+    }
+}
+.elementToFadeInAndOut {
+    -webkit-animation: fadeinout 0.5s 0.5s  linear forwards;
+    animation: fadeinout 0.5s 0.5s linear forwards;
+}
+
+@-webkit-keyframes fadeinout {
+  0%{ opacity: 1; }
+  100% { opacity: 0; }
+}
+
+@keyframes fadeinout {
+    0%{ opacity: 1; }
+    100% { opacity: 0; }
+}

@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', sans-serif;
+
+}
+
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background-color: black;
+}
+
+body::-webkit-scrollbar {
+    width: 0.75rem
+}
+
+body::-webkit-scrollbar-track {
+    background-color: black;
+
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #28c6ed;
+}
