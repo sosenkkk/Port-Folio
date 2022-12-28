@@ -1,7 +1,6 @@
 import { useState } from "react";
 import ActionAreaCard from "./CardComponent";
 import React from 'react';
-import Modal from "../Modal/Modal";
 import ModalHolder from "../Modal/ModalHolder";
 
 const CardHolder = () => {
