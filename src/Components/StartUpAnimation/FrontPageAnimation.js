@@ -46,8 +46,8 @@ const FrontPageAnimation = () => {
                                 <h1 className="small_intro" >
                                     I AM SHASHANK.
                                 </h1>
-                                <div class="div-holder">
-                                    <div class="typewriter">
+                                <div className="div-holder">
+                                    <div className="typewriter">
                                         <h4>WEB DEVELOPER</h4>
                                     </div>
                                 </div>

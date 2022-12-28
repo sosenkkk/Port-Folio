@@ -7,7 +7,42 @@
     text-align: center;
     display: flex;
     flex-direction: column;
+}
+.animation_deploy{
+    opacity: 0;
+}
+.animation_about{
+    -webkit-animation: fadeinout 0.75s 2s linear forwards;
+    animation: fadeinout 0.75s 2s linear forwards;
 
+}
+
+@-webkit-keyframes fadeinout {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeinout {
+    0% {
+        opacity: 0;
+    }
+
+    50% {
+        opacity: 0.2;
+    }
+
+    100% {
+        opacity: 1;
+    }
 }
 
 .aboutme{
