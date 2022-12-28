@@ -12,8 +12,10 @@
 .modal {
     color: aliceblue;
     position: fixed;
-    top: 30vh;
+    top: 20vh;
     left: 5%;
+    overflow-y: scroll;
+    height: 65vh;
     width: 90%;
     background-color: rgb(4, 0, 0);
     padding: 3rem;
@@ -22,11 +24,35 @@
     animation: slide-down 300ms ease-out forwards;
     border:2px solid #28c6ed;
 }
+.modal::-webkit-scrollbar {
+    width: 0.75rem
+}
 
-@media (min-width: 768px) {
+.modal::-webkit-scrollbar-track {
+    background-color: black;
+
+}
+
+.modal::-webkit-scrollbar-thumb {
+    background-color: #28c6ed;
+}
+
+@media (min-width: 1250px) {
     .modal {
-        width: 40rem;
-        left: calc(50% - 20rem);
+        width: 60%;
+        left: 20%;
+    }
+}
+@media (min-width: 1090px) and (max-width:1250px) {
+    .modal {
+        width: 70%;
+        left: 15%;
+    }
+}
+@media (min-width: 750px) and (max-width:1090px) {
+    .modal {
+        width: 82%;
+        left: 9%;
     }
 }
 
