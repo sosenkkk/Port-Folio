@@ -16,9 +16,7 @@ function App() {
   var cxt= useContext(CartContext);
 
   
-  const show=()=>{
-    console.log(cxt);
-  }
+  
 
   return <CartProvider>
     {preloader && <Preloader />}
