@@ -10,6 +10,7 @@
 }
 
 .modal {
+    border-radius: 12px;
     color: aliceblue;
     position: fixed;
     top: 20vh;
@@ -25,16 +26,19 @@
     border:2px solid #28c6ed;
 }
 .modal::-webkit-scrollbar {
-    width: 0.75rem
+    width: 0.75rem;
+    border-radius: 12px;
 }
 
 .modal::-webkit-scrollbar-track {
     background-color: black;
-
+    border-radius: 100%;
+  
 }
 
 .modal::-webkit-scrollbar-thumb {
     background-color: #28c6ed;
+    border-radius: 18px;
 }
 
 @media (min-width: 1250px) {

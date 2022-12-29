@@ -21,6 +21,8 @@ export default function ActionAreaCard(props) {
       padding: "2rem",
       margin:"1rem",
       border:"1px solid",
+      borderRadius:"8px"
+
       }}>
       <CardActionArea onClick={onClick} >  
         <CardMedia
