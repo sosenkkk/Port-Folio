@@ -1,5 +1,5 @@
 import "./App.css"
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import ResponsiveAppBar from "./Components/NavBar";
 import FrontPageAnimation from "./Components/StartUpAnimation/FrontPageAnimation";
 import CardHolder from "./Components/Card/CardHolder";
