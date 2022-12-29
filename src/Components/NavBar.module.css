@@ -13,6 +13,15 @@
 
 }
 
+.link_navbar{
+    text-decoration: none;
+    color: #0ccdfda2;
+}
+
+.link_navbar:hover{
+    color: #28d4ff;
+}
+
 .navbarButtons{
     color: #0ccdfda2;
     padding: 12px;

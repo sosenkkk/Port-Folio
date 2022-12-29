@@ -13,13 +13,11 @@ import ListItemText from '@mui/material/ListItemText';
 import MenuIcon from '@mui/icons-material/Menu';
 import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
-// import Button from '@mui/material/Button';
 import styles from "./NavBar.module.css"
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AdbIcon from '@mui/icons-material/Adb';
-const icons = [<GitHubIcon href="https://github.com/sosenkkk" />, <LinkedInIcon href="https://www.linkedin.com/in/shashank-raj-5bb2a11b6/" />]
-
+const icons = [<a className={styles.link_navbar} target="_blank" rel="noopener noreferrer" href='https://github.com/sosenkkk' ><GitHubIcon /></a>,<a className={styles.link_navbar} target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shashank-raj-5bb2a11b6/"><LinkedInIcon /></a>];
 const drawerWidth = 240;
 const navItems = ['Resume', 'About', 'Home'];
 

@@ -1,0 +1,39 @@
+.title_name{
+    font-family: "Space mono", sans-serif;
+    font-size: 3rem;
+}
+
+.skill_container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+}
+
+.skill_item{
+    border: 1px solid #28c6ed ;
+    min-width: 200px;
+    min-height: 300px;
+    margin: 1rem;
+    width: 45%;
+
+}
+.skill_item ul{
+    list-style-type: none;
+    margin: 1.5rem;
+}
+
+.skill_item h3{
+
+    font-size: 2rem;
+    text-decoration: underline;
+    text-align: center;
+    
+}
+
+.skill_item img{
+
+    height: 1rem;
+    
+}

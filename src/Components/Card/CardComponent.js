@@ -4,11 +4,15 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import { CardActionArea } from '@mui/material';
+import CartContext from '../Store/CartContext';
 // import styles from "./CardComponent.module.css"
 export default function ActionAreaCard(props) {
+  const cxt= React.useContext(CartContext);
   const onClick=()=>{
-    console.log("ye");
+    cxt.addItem(props.id);
+    props.onClick(props.id);
   };
+
   return (
 
     <Card  sx={{ width: "300px", backgroundColor: "black",
