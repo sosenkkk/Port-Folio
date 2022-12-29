@@ -11,13 +11,14 @@
 .footer{
     background-color: black;
     text-align: center;
-    color:aliceblue;
     border-radius: 12px;
-    border:2px solid #28c6ed;
-    margin: 1.5rem;
+    border:1px solid #28c6ed;
     padding: 1.5rem;
     padding-top: 0.5rem;
+    color: #28c6ed;
+    margin: 0rem 3rem 2rem;
 }
+
 .footer_title{
     margin: 1rem;
 }
@@ -31,6 +32,8 @@
 .footer_mine a{
     text-decoration: none;
     color: #0f97b8;
+    min-width: 30px;
+    padding: 1rem;
     
 }
 
@@ -43,4 +46,17 @@
     0%{transform: scale(1);}
     75%{transform: scale(1.2);}
     100%{transform: scale(1.1);}
+}
+
+@media (max-width:700px)and (min-width:500px) {
+    .footer_title h2 {
+        font-size: 2.5rem;
+        margin: 1rem;
+    }
+}
+
+@media (max-width:500px){
+    .footer_title h2 {
+        font-size: 1.8rem;
+    }
 }

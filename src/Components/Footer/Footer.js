@@ -10,17 +10,17 @@ const Footer = () => {
 
     return (
         <React.Fragment>
-            <div style={{backgroundColor:"black"}} >
+            <div style={{ backgroundColor: "black" }} >
                 <div className="footer">
                     <div className="footer_title">
                         <h2>Contact Me</h2>
                     </div>
                     <div className="footer_mine" >
+                        <a href="mailto:shashankraj3636@gmail.com" rel="noopener noreferrer" target="_blank" ><GoogleIcon fontSize="large" /></a>
                         <a target="_blank" rel="noopener noreferrer" href='https://github.com/sosenkkk' ><GitHubIcon fontSize="large" /></a>
-                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shashank-raj-5bb2a11b6/"><LinkedInIcon fontSize="large"/></a>
-                        <a href="mailto:shashankraj3636@gmail.com" rel="noopener noreferrer" target="_blank" ><GoogleIcon fontSize="large"/></a>
-                        <a target="_blank" rel="noopener noreferrer" href='https://twitter.com/sosenkkk' ><TwitterIcon fontSize="large"/></a>
-                        <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/sosenkkk/' ><InstagramIcon fontSize="large"/></a>
+                        <a target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shashank-raj-5bb2a11b6/"><LinkedInIcon fontSize="large" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href='https://twitter.com/sosenkkk' ><TwitterIcon fontSize="large" /></a>
+                        <a target="_blank" rel="noopener noreferrer" href='https://www.instagram.com/sosenkkk/' ><InstagramIcon fontSize="large" /></a>
                     </div>
                 </div>
             </div>

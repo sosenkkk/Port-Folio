@@ -46,7 +46,7 @@ const ModalHolder = (props) => {
                             <h3>Languages</h3>
                             <ul>
                                 <li> <img alt="c" src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"/> C</li>
-                                <li><DiJava /> Java</li>
+                                <li><DiJava/> Java</li>
                                 <li><FaHtml5 />HTML</li>
                                 <li><FaCss3 /> CSS</li>
                                 <li> <SiJavascript/> JavaScript</li>

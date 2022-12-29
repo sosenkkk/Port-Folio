@@ -14,11 +14,12 @@
 .skill_item{
     border: 1px solid #28c6ed ;
     min-width: 200px;
-    min-height: 300px;
+    min-height: 350px;
     margin: 1rem;
     width: 45%;
 
 }
+
 
 .skill_item ul{
     list-style-type: none;
@@ -26,6 +27,7 @@
 }
 .skill_item li{
     font-size: 1.5rem;
+    margin: 1rem;
 }
 .skill_item h3{
 
@@ -45,10 +47,27 @@
     .skill_item{
         width: 75%;
     }
+    .title_name{
+        font-size: 2.5rem;
+    }
 }
 
 @media (max-width:500px) {
     .skill_item{
         width: 90%;
+    }
+    .title_name{
+        font-size: 1.5rem;
+        margin-left: 0;
+    }
+}
+
+@media (max-width:470px) {
+    .skill_item li{
+        font-size: 1.2rem;
+        margin: 1rem;
+    }
+    .skill_item ul{
+        margin: 0.5rem;
     }
 }
