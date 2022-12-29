@@ -1,0 +1,46 @@
+.footer_mine{
+    display: flex;
+    align-items: center ;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 800px;
+    width: 95%;
+    margin: 2rem auto 1rem;
+}
+
+.footer{
+    background-color: black;
+    text-align: center;
+    color:aliceblue;
+    border-radius: 12px;
+    border:2px solid #28c6ed;
+    margin: 1.5rem;
+    padding: 1.5rem;
+    padding-top: 0.5rem;
+}
+.footer_title{
+    margin: 1rem;
+}
+.footer_title h2{
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    color: aliceblue;
+    border-bottom: 3px solid White;
+}
+
+.footer_mine a{
+    text-decoration: none;
+    color: #0f97b8;
+    
+}
+
+.footer_mine a:hover{
+    color: #2ed5ff;
+    animation: zoom 250ms linear forwards;
+}
+
+@keyframes zoom {
+    0%{transform: scale(1);}
+    75%{transform: scale(1.2);}
+    100%{transform: scale(1.1);}
+}
