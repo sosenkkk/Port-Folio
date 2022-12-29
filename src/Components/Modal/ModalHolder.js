@@ -6,12 +6,12 @@ import { DiJava } from 'react-icons/di'
 import { FaHtml5 } from 'react-icons/fa'
 import { FaCss3 } from 'react-icons/fa'
 import { FaReact } from 'react-icons/fa'
-import {FaBootstrap } from 'react-icons/fa'
+import { FaBootstrap } from 'react-icons/fa'
 import GitHub from "@mui/icons-material/GitHub";
-import {SiJavascript } from 'react-icons/si'
-import {SiJquery } from 'react-icons/si'
-import {SiVisualstudiocode } from 'react-icons/si'
-import {SiIntellijidea} from 'react-icons/si'
+import { SiJavascript } from 'react-icons/si'
+import { SiJquery } from 'react-icons/si'
+import { SiVisualstudiocode } from 'react-icons/si'
+import { SiIntellijidea } from 'react-icons/si'
 
 
 const ModalHolder = (props) => {
@@ -34,8 +34,8 @@ const ModalHolder = (props) => {
                         <CartItem id="4" title="Calculator App" describe="Themed Calculator" />
                         <CartItem id="5" title="Netwiz" describe="ISP website." />
 
-                   
-                    </ul>  
+
+                    </ul>
                 </Modal>
             }
             {modal === "skills" &&
@@ -45,23 +45,23 @@ const ModalHolder = (props) => {
                         <div className="skill_item">
                             <h3>Languages</h3>
                             <ul>
-                                <li> <img alt="c" src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg"/> C</li>
-                                <li><DiJava/> Java</li>
+                                <li> <img alt="c" src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" /> C</li>
+                                <li><DiJava /> Java</li>
                                 <li><FaHtml5 />HTML</li>
                                 <li><FaCss3 /> CSS</li>
-                                <li> <SiJavascript/> JavaScript</li>
+                                <li> <SiJavascript /> JavaScript</li>
                             </ul>
                         </div>
                         <div className="skill_item">
                             <h3>Frameworks</h3>
                             <ul>
-                                <li><FaReact/> React Js</li>
+                                <li><FaReact /> React Js</li>
                                 <li><DiJava /> JavaFx</li>
-                                <li><FaBootstrap/> BootStrap</li>
-                                <li><SiJquery/> JQuery</li>
+                                <li><FaBootstrap /> BootStrap</li>
+                                <li><SiJquery /> JQuery</li>
                             </ul>
                         </div>
-                        
+
                         <div className="skill_item">
                             <h3>Tools</h3>
                             <ul>
@@ -77,15 +77,21 @@ const ModalHolder = (props) => {
                 <Modal onClose={closeModal} >
                     <h2 className="title_name" >Experience</h2>
                     <ul>
+
                     </ul>
                 </Modal>
             }
             {modal === "achievements" &&
                 <Modal onClose={closeModal} >
-                    <h2 className="title_name" >Achievements</h2>
-                    <ul>
-                        <li>Filhal toh kucho nahi hai!!</li>
-                    </ul>
+                    <h2 className="title_name" >Scholastic Achievements</h2>
+                    <div className="skill_item_scholastic">
+                        <ul>
+                            <li>Top 2.5% in Country in JEE Mains.</li>
+                            <li>Got 100 marks in Computer Science in Boards Examination.</li>
+                            <li>Awarded Gold Medal in SilverZone International Math Olympiad twice at district level.</li>
+                            <li>Awarded Silver Medal in SilverZone Physics Olympiad at district level.</li>
+                        </ul>
+                    </div>
                 </Modal>
             }
         </React.Fragment>

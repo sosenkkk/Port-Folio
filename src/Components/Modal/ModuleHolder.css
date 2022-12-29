@@ -17,20 +17,20 @@
     min-height: 350px;
     margin: 1rem;
     width: 45%;
-
 }
 
 
+.skill_item_scholastic ul,
 .skill_item ul{
     list-style-type: none;
     margin: 1.5rem;
 }
+.skill_item_scholastic li,
 .skill_item li{
     font-size: 1.5rem;
     margin: 1rem;
 }
 .skill_item h3{
-
     font-size: 2rem;
     text-decoration: underline;
     text-align: center;
@@ -38,9 +38,7 @@
 }
 
 .skill_item img{
-
-    height: 1rem;
-    
+    height: 1rem; 
 }
 
 @media (min-width:500px) and (max-width:950px) {
@@ -63,10 +61,12 @@
 }
 
 @media (max-width:470px) {
+    .skill_item_scholastic li,
     .skill_item li{
         font-size: 1.2rem;
         margin: 1rem;
     }
+    .skill_item_scholastic ul,
     .skill_item ul{
         margin: 0.5rem;
     }
