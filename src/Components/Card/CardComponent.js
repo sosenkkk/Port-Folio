@@ -32,10 +32,10 @@ export default function ActionAreaCard(props) {
           alt="work"
         />
         <CardContent >
-          <Typography gutterBottom variant="h5" component="div">
+          <Typography gutterBottom sx={{fontFamily:"'Space Mono', sans-serif",textDecoration:"underline" ,color:"#fff"}} variant="h5" component="div">
             {props.toDisplay}
           </Typography>
-          <Typography variant="body2">
+          <Typography variant="body2" sx={{lineHeight:"2", fontFamily:"'Space Mono', sans-serif", fontSize:"15px"}}>
             {props.toDescribe}
           </Typography>
         </CardContent>
