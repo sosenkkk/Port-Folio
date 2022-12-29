@@ -40,3 +40,15 @@
     height: 1rem;
     
 }
+
+@media (min-width:500px) and (max-width:950px) {
+    .skill_item{
+        width: 75%;
+    }
+}
+
+@media (max-width:500px) {
+    .skill_item{
+        width: 90%;
+    }
+}
