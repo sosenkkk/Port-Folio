@@ -19,11 +19,14 @@
     width: 45%;
 
 }
+
 .skill_item ul{
     list-style-type: none;
     margin: 1.5rem;
 }
-
+.skill_item li{
+    font-size: 1.5rem;
+}
 .skill_item h3{
 
     font-size: 2rem;

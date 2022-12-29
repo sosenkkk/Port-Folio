@@ -84,6 +84,7 @@ const ModalHolder = (props) => {
                 <Modal onClose={closeModal} >
                     <h2 className="title_name" >Achievements</h2>
                     <ul>
+                        <li>Filhal toh kucho nahi hai!!</li>
                     </ul>
                 </Modal>
             }
