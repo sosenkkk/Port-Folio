@@ -5,12 +5,16 @@
     font-family: 'Space Grotesk', sans-serif;
 
 }
-
-
+html{
+    background-color: black;
+}
 body {
     margin: 0;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+}
+div{
+    background-color: black;
 }
 
 body::-webkit-scrollbar {
