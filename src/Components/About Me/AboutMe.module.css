@@ -25,7 +25,7 @@
 
 @keyframes zoom {
     0%{transform: scale(1); }
-    100%{transform: scale(1.015);
+    100%{transform: scale(1.0125);
     }
 }
 
@@ -90,6 +90,7 @@
     .about-me-container{
         padding: 2rem;
         margin: 1.5rem;
+        margin-top: 0;
     }
     .aboutme {
         font-size: 2rem;

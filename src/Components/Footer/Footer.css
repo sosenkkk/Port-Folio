@@ -39,10 +39,10 @@
 
 .footer_mine a:hover{
     color: #2ed5ff;
-    animation: zoom 250ms linear forwards;
+    animation: zoom2 250ms linear forwards;
 }
 
-@keyframes zoom {
+@keyframes zoom2 {
     0%{transform: scale(1);}
     75%{transform: scale(1.2);}
     100%{transform: scale(1.1);}
@@ -71,6 +71,6 @@
 
 @keyframes zoom {
     0%{transform: scale(1); }
-    100%{transform: scale(1.015);
+    100%{transform: scale(1.0125);
     }
 }
