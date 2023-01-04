@@ -16,7 +16,7 @@
     padding: 1.5rem;
     padding-top: 0.5rem;
     color: #28c6ed;
-    margin: 0rem 3rem 2rem;
+    margin: 1rem 3rem 2rem;
 }
 
 .footer_title{
@@ -58,5 +58,19 @@
 @media (max-width:500px){
     .footer_title h2 {
         font-size: 1.8rem;
+    }
+}
+
+.footer:hover{
+    animation: zoom 200ms linear forwards;
+
+}
+.about-me-container{
+    overflow: hidden;
+}
+
+@keyframes zoom {
+    0%{transform: scale(1); }
+    100%{transform: scale(1.015);
     }
 }
