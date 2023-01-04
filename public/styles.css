@@ -13,9 +13,6 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
-div{
-    background-color: black;
-}
 
 
 body::-webkit-scrollbar {
