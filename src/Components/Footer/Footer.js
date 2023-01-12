@@ -10,7 +10,7 @@ const Footer = () => {
 
     return (
         <React.Fragment>
-            <div className="about-me-container" style={{ backgroundColor: "black" }} >
+            <div className="about-me-container" style={{ backgroundColor: "black" }} id="Contact" >
                 <div className="footer">
                     <div className="footer_title">
                         <h2>Contact Me</h2>

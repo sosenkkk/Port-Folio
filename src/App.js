@@ -9,12 +9,18 @@ import CartProvider from "./Components/Store/CartProvider";
 import Footer from "./Components/Footer/Footer";
 
 function App() {
+
   const [preloader, setpreloader] = useState(true);
   setTimeout(() => {
     setpreloader(false);
   }, 1400);
 
 
+  const moveHandler=(event)=>{
+    let scrolledElement= document.getElementById(event);
+    console.log(scrolledElement);
+    scrolledElement.scrollIntoView({behavior:'smooth'});
+  };
 
 
 
@@ -22,8 +28,8 @@ function App() {
     {preloader && <Preloader />}
     {!preloader && <React.Fragment>
       <FrontPageAnimation />
-      <ResponsiveAppBar />
-      <div className="encloser-div" >
+      <ResponsiveAppBar onButtonClick={moveHandler} />
+      <div  className="encloser-div" >
         <AboutMe />
         <CardHolder />
       </div>

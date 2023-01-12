@@ -19,15 +19,20 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import AdbIcon from '@mui/icons-material/Adb';
 const icons = [<a className={styles.link_navbar} target="_blank" rel="noopener noreferrer" href='https://github.com/sosenkkk' ><GitHubIcon /></a>,<a className={styles.link_navbar} target="_blank" rel="noopener noreferrer" href="https://www.linkedin.com/in/shashank-raj-5bb2a11b6/"><LinkedInIcon /></a>];
 const drawerWidth = 240;
-const navItems = ['Resume', 'About', 'Home'];
+const navItems = ['Home', 'About', 'Contact'];
 
 function DrawerAppBar(props) {
+
 	const { window } = props;
 	const [mobileOpen, setMobileOpen] = React.useState(false);
 
 	const handleDrawerToggle = () => {
 		setMobileOpen((prevState) => !prevState);
 	};
+
+	const buttonClicked=event=>{
+		props.onButtonClick(event.target.outerText);
+	}
 
 	const drawer = (
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', color: "#28c6ed" }}>
@@ -41,7 +46,7 @@ function DrawerAppBar(props) {
 			<List>
 				{navItems.map((item) => (
 					<ListItem key={item} disablePadding>
-						<ListItemButton sx={{ textAlign: 'center', border: "1px solid #28c6ed", borderLeft: "none", borderRight: "NONE" }}>
+						<ListItemButton onClick={buttonClicked} sx={{ textAlign: 'center', border: "1px solid #28c6ed", borderLeft: "none", borderRight: "NONE" }}>
 							<ListItemText primary={item} />
 						</ListItemButton>
 					</ListItem>
@@ -93,27 +98,10 @@ function DrawerAppBar(props) {
 							Sosenk
 						</div>
 					</Typography>
-					{/* <div >
-						<Typography
-							variant="h5"
-							noWrap
-							component="a"
-							href="/"
-							sx={{
-								display: { xs: 'none', md: 'block' },
-								fontFamily: 'monospace',
-								fontWeight: 700,
-								letterSpacing: '.3rem',
-								color: '#28c6ed',
-								textDecoration: 'none',
-							}}
-						>
-							Sosenk
-						</Typography>
-					</div> */}
+					
 					<Box sx={{ display: { xs: 'none', md: 'block' } }}>
 						{navItems.map((item) => (
-							<button className={styles.navbarButtons}  key={item}  >
+							<button className={styles.navbarButtons} onClick={buttonClicked}  key={item}  >
 								{item}
 							</button>
 						))}

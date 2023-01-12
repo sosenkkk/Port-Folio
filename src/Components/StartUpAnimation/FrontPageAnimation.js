@@ -44,7 +44,7 @@ const FrontPageAnimation = () => {
 
 
     return (
-        <div style={{ backgroundColor: "black", overflow: "hidden" }}  >
+        <div style={{ backgroundColor: "black", overflow: "hidden" }} id="Home"  >
             <div className={`animation_start elementToFadeInAndOut`} id="animation_start-scene">
                 <section className="move">
                     <div className="animation_container">
