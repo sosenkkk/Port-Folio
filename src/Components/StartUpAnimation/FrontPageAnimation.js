@@ -2,16 +2,12 @@ import "./FrontPageAnimation.css"
 import React, {useState} from "react";
 const FrontPageAnimation = () => {
     const target = document;
-    const [subBio, setsubBio] = useState("WEB DEVELOPER");
+    const [subBio, setsubBio] = useState(0);
+    const arraySub=["WEB DEVELOPER","JAVA ENTHUSIAST"]
     setInterval(()=>{
-        if(subBio==="WEB DEVELOPER")
-            setsubBio("JAVA ENTHUSIAST");
-        else
-            setsubBio("WEB DEVELOPER")         
+        setsubBio((prev)=>prev+1);      
     }, 4500);
 
-
-    
 
     function factorfinder() {
         var w = window.innerWidth;
@@ -57,7 +53,7 @@ const FrontPageAnimation = () => {
                                 </h1>
                                 <div className="div-holder">
                                     <div className="typewriter">
-                                        <h4>{subBio}</h4>
+                                        <h4>{arraySub[subBio%2]}</h4>
                                     </div>                                    
                                 </div>
                                 
