@@ -2,14 +2,14 @@ import "./FrontPageAnimation.css"
 import React, {useState} from "react";
 const FrontPageAnimation = () => {
     const target = document;
-    const [subBio, setsubBio] = useState(true);
-
+    const [subBio, setsubBio] = useState("WEB DEVELOPER");
     setInterval(()=>{
-        setsubBio((prevBio)=> !prevBio);
-        console.log(vari);       
+        if(subBio==="WEB DEVELOPER")
+            setsubBio("JAVA ENTHUSIAST");
+        else
+            setsubBio("WEB DEVELOPER")         
     }, 4500);
 
-    let vari = subBio ? "WEB DEVELOPER" : "JAVA ENTHUSIAST";
 
     
 
@@ -57,7 +57,7 @@ const FrontPageAnimation = () => {
                                 </h1>
                                 <div className="div-holder">
                                     <div className="typewriter">
-                                        <h4>{vari}</h4>
+                                        <h4>{subBio}</h4>
                                     </div>                                    
                                 </div>
                                 
