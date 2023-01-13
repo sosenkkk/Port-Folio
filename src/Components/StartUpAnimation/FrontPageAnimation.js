@@ -1,12 +1,19 @@
 import "./FrontPageAnimation.css"
-import React, {useState} from "react";
+import React, {useEffect,useState} from "react";
 const FrontPageAnimation = () => {
     const target = document;
-    const [subBio, setsubBio] = useState(0);
-    const arraySub=["WEB DEVELOPER","JAVA ENTHUSIAST"]
-    setTimeout(()=>{
-        setsubBio((prev)=>prev+1);      
-    }, 4500);
+    const [subBio, setsubBio] = useState(true);
+    const arraySub=subBio ? "WEB DEVELOPER":"JAVA ENTHUSIAST";
+    useEffect(()=>{
+        let xd = setInterval(()=>{
+            setsubBio((prev)=>!prev);      
+        }, 4500);
+
+        return () => {
+            clearInterval(xd)
+        }
+    }, []);
+    
 
 
     function factorfinder() {
@@ -16,10 +23,10 @@ const FrontPageAnimation = () => {
             factor = 0.15;
         }
         else if (w <= 780 && w > 500) {
-            factor = 0.13;
+            factor = 0.145;
         }
         else {
-            factor = 0.11;
+            factor = 0.13;
         }
         return factor;
     }
@@ -53,7 +60,7 @@ const FrontPageAnimation = () => {
                                 </h1>
                                 <div className="div-holder">
                                     <div className="typewriter">
-                                        <h4>{arraySub[subBio%2]}</h4>
+                                        <h4>{arraySub}</h4>
                                     </div>                                    
                                 </div>
                                 
