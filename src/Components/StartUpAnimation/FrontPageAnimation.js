@@ -4,7 +4,7 @@ const FrontPageAnimation = () => {
     const target = document;
     const [subBio, setsubBio] = useState(0);
     const arraySub=["WEB DEVELOPER","JAVA ENTHUSIAST"]
-    setInterval(()=>{
+    setTimeout(()=>{
         setsubBio((prev)=>prev+1);      
     }, 4500);
 
