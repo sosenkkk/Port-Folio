@@ -6,13 +6,14 @@ const FrontPageAnimation = () => {
     const arraySub=subBio ? "WEB DEVELOPER":"JAVA ENTHUSIAST";
     useEffect(()=>{
         let xd = setInterval(()=>{
-            setsubBio((prev)=>!prev);      
+            setsubBio((prev)=>!prev); 
+               
         }, 4500);
-
         return () => {
             clearInterval(xd)
         }
     }, []);
+    console.log(subBio);
     
 
 
