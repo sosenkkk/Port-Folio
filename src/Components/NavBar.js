@@ -33,6 +33,10 @@ function DrawerAppBar(props) {
 	const buttonClicked=event=>{
 		props.onButtonClick(event.target.outerText);
 	}
+	const drawerbuttonClicked=event=>{
+		props.onDrawerButtonClick(event.target.outerText);
+	}
+	
 
 	const drawer = (
 		<Box onClick={handleDrawerToggle} sx={{ textAlign: 'center', color: "#28c6ed" }}>
@@ -46,7 +50,7 @@ function DrawerAppBar(props) {
 			<List>
 				{navItems.map((item) => (
 					<ListItem key={item} disablePadding>
-						<ListItemButton onClick={buttonClicked} sx={{ textAlign: 'center', border: "1px solid #28c6ed", borderLeft: "none", borderRight: "NONE" }}>
+						<ListItemButton onClick={drawerbuttonClicked} sx={{ textAlign: 'center', border: "1px solid #28c6ed", borderLeft: "none", borderRight: "NONE" }}>
 							<ListItemText primary={item} />
 						</ListItemButton>
 					</ListItem>

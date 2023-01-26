@@ -18,9 +18,13 @@ function App() {
 
   const moveHandler=(event)=>{
     let scrolledElement= document.getElementById(event);
-    console.log(scrolledElement);
     scrolledElement.scrollIntoView({behavior:'smooth'});
   };
+  const drawerHandler=(event)=>{
+    let scrolledElement= document.getElementById(event);
+    scrolledElement.scrollIntoView();
+  };
+
 
 
 
@@ -28,7 +32,7 @@ function App() {
     {preloader && <Preloader />}
     {!preloader && <React.Fragment>
       <FrontPageAnimation />
-      <ResponsiveAppBar onButtonClick={moveHandler} />
+      <ResponsiveAppBar onButtonClick={moveHandler} onDrawerButtonClick={drawerHandler} />
       <div  className="encloser-div" >
         <AboutMe />
         <CardHolder />
