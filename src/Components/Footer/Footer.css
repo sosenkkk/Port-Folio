@@ -39,7 +39,7 @@
 
 .footer_mine a:hover{
     color: #2ed5ff;
-    animation: zoom2 250ms linear forwards;
+    /* animation: zoom2 250ms linear forwards; */
 }
 
 @keyframes zoom2 {
@@ -62,7 +62,7 @@
 }
 
 .footer:hover{
-    animation: zoom 200ms linear forwards;
+    /* animation: zoom 200ms linear forwards; */
 
 }
 .about-me-container{
