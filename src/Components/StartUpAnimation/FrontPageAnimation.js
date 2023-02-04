@@ -13,7 +13,6 @@ const FrontPageAnimation = () => {
             clearInterval(xd)
         }
     }, []);
-    console.log(subBio);
     
 
 
