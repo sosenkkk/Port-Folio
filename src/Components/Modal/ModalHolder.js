@@ -45,29 +45,29 @@ const ModalHolder = (props) => {
                         <div className="skill_item">
                             <h3>Languages</h3>
                             <ul>
-                                <li> <img alt="c" src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" /> C</li>
-                                <li><DiJava /> Java</li>
-                                <li><FaHtml5 />HTML</li>
-                                <li><FaCss3 /> CSS</li>
+                                <li> <img alt="c" src="https://upload.wikimedia.org/wikipedia/commons/1/18/C_Programming_Language.svg" /> C </li>
+                                <li> <DiJava /> Java</li>
+                                <li> <FaHtml5 /> HTML</li>
+                                <li> <FaCss3 /> CSS</li>
                                 <li> <SiJavascript /> JavaScript</li>
                             </ul>
                         </div>
                         <div className="skill_item">
                             <h3>Frameworks</h3>
                             <ul>
-                                <li><FaReact /> React Js</li>
-                                <li><DiJava /> JavaFx</li>
-                                <li><FaBootstrap /> BootStrap</li>
-                                <li><SiJquery /> JQuery</li>
+                                <li> <FaReact /> React Js</li>
+                                <li> <DiJava /> JavaFx</li>
+                                <li> <FaBootstrap /> BootStrap</li>
+                                <li> <SiJquery /> JQuery</li>
                             </ul>
                         </div>
 
                         <div className="skill_item">
                             <h3>Tools</h3>
                             <ul>
-                                <li> <SiVisualstudiocode />Vs Code</li>
-                                <li> <SiIntellijidea />Intellij</li>
-                                <li><GitHub />GitHub</li>
+                                <li> <SiVisualstudiocode /> Vs Code</li>
+                                <li> <SiIntellijidea /> Intellij</li>
+                                <li> <GitHub /> GitHub</li>
                             </ul>
                         </div>
                     </div>

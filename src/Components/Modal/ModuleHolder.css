@@ -29,6 +29,7 @@
 .skill_item li{
     font-size: 1.5rem;
     margin: 1rem;
+    word-spacing: 10px;
 }
 .skill_item h3{
     font-size: 2rem;
@@ -39,6 +40,7 @@
 
 .skill_item img{
     height: 1rem; 
+    margin:0 5px;
 }
 
 @media (min-width:500px) and (max-width:950px) {
