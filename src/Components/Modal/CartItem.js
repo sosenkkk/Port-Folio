@@ -15,10 +15,10 @@ const CartItem = (props) => {
       window.open("https://github.com/sosenkkk/Typo-App")
     }
     if(props.id==="4"){
-      window.open("https://sosenkkk.github.io/Calculator-app/")
+      window.open("https://postttitt.netlify.app/")
     }
     if(props.id==="5"){
-      window.open("https://sosenkkk.github.io/Netwiz/")
+      window.open("https://shop-n-sell.onrender.com/")
     }
   }
   const repoHandler=()=>{
@@ -32,10 +32,10 @@ const CartItem = (props) => {
       window.open("https://github.com/sosenkkk/Typo-App")
     }
     if(props.id==="4"){
-      window.open("https://github.com/sosenkkk/Calculator-app")
+      window.open("https://github.com/sosenkkk/Post-It")
     }
     if(props.id==="5"){
-      window.open("https://github.com/sosenkkk/Netwiz")
+      window.open("https://github.com/sosenkkk/E-commerce")
     }
   }
   return (
