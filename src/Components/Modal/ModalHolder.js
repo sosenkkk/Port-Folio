@@ -12,7 +12,7 @@ import { SiJavascript, SiTailwindcss } from 'react-icons/si'
 import { SiJquery } from 'react-icons/si'
 import { SiVisualstudiocode,SiFramer } from 'react-icons/si'
 import { SiIntellijidea, SiTypescript, SiMysql } from 'react-icons/si'
-
+import { UTurnLeft } from "@mui/icons-material";
 
 
 const ModalHolder = (props) => {
@@ -107,6 +107,7 @@ const ModalHolder = (props) => {
         </React.Fragment>
     )
 }
+
 
 export default ModalHolder;
 
