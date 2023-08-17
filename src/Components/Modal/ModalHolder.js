@@ -70,7 +70,7 @@ const ModalHolder = (props) => {
                             </ul>
                         </div>
 
-                        <div className="skill_item">
+                        <div className="skill_item" style={{height:"350px"}}>
                             <h3>Tools</h3>
                             <ul>
                                 <li> <SiVisualstudiocode /> Vs Code</li>
