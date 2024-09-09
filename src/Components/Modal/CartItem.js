@@ -20,6 +20,12 @@ const CartItem = (props) => {
     if(props.id==="5"){
       window.open("https://shop-n-sell.onrender.com/")
     }
+    if(props.id==="6"){
+      window.open("https://iiits-sosenkkk.vercel.app/")
+    }
+    if(props.id==="7"){
+      window.open("https://next-carbon.vercel.app/")
+    }
   }
   const repoHandler=()=>{
     if(props.id==="1"){
@@ -36,6 +42,12 @@ const CartItem = (props) => {
     }
     if(props.id==="5"){
       window.open("https://github.com/sosenkkk/E-commerce")
+    }
+    if(props.id==="6"){
+      window.open("https://github.com/sosenkkk/iiits-sosenkkk")
+    }
+    if(props.id==="7"){
+      window.open("https://github.com/sosenkkk/nextCarbon")
     }
   }
   return (
